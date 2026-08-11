@@ -1,24 +1,53 @@
 # Snowflake Smoothies
 
-A Streamlit smoothie-order application that connects to Snowflake through Snowpark.
+A Streamlit smoothie-order application that uses Snowpark and Snowflake for data-backed application workflows.
 
-## Requirements
+## Overview
+
+Snowflake Smoothies demonstrates how a small interactive Streamlit application can connect to Snowflake data and integrate an API-driven fruit search workflow.
+
+## Features
+
+- Streamlit web interface
+- Snowflake/Snowpark integration
+- Data-backed smoothie workflow
+- API-driven fruit search
+- Local development configuration
+
+## Prerequisites
 
 - Python 3.10+
-- Dependencies in `requirements.txt`
-- A Snowflake account and connection configuration
+- pip
+- Snowflake account and connection configuration
 
-## Run locally
+## Installation
 
 ```bash
+git clone https://github.com/TanishC4444/Snowflake_smoothies.git
+cd Snowflake_smoothies
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
 python -m pip install -r requirements.txt
+```
+
+## Quick Start
+
+```bash
 streamlit run streamlit_app.py
 ```
 
 ## Configuration
 
-Keep Snowflake credentials in environment variables, a local secrets file, or your deployment platform's secret manager—never in the repository.
+Store Snowflake credentials in Streamlit secrets, environment variables, or your deployment platform's secret manager. Never commit credentials to the repository.
 
-## Project scope
+## Status
 
-This is a learning project demonstrating a small Streamlit interface backed by Snowflake data and API-driven fruit search.
+Learning project demonstrating Streamlit and Snowflake integration.
+
+## License
+
+No separate license is currently specified in the repository.
+
+## Support
+
+Use GitHub Issues for bugs and questions.
