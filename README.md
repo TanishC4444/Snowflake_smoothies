@@ -2,6 +2,15 @@
 
 A Streamlit learning project for choosing fruit ingredients and storing orders in Snowflake.
 
+## Get the source
+
+```sh
+git clone --filter=blob:none https://github.com/TanishC4444/Snowflake_smoothies.git
+cd Snowflake_smoothies
+```
+
+Use a supported Python version for the component. For virtual environments, Windows activation is `.venv\Scripts\activate`; macOS/Linux activation is `source .venv/bin/activate`.
+
 ## Local demo
 
 ```sh
@@ -10,6 +19,8 @@ source .venv/bin/activate
 python -m pip install streamlit pandas requests
 SMOOTHIE_DEMO=1 streamlit run streamlit_app.py
 ```
+
+Open the Streamlit URL printed in the terminal, normally `http://localhost:8501`. On PowerShell set `$env:SMOOTHIE_DEMO="1"` before `streamlit run streamlit_app.py`.
 
 The demo uses synthetic fruit data and keeps orders only in the browser session. It needs no database or external nutrition service.
 
